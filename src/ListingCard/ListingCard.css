@@ -1,0 +1,43 @@
+.Listing-Card {
+  border: 1px solid #ddd; /* Add a subtle border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Add padding */
+  background-color: white; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  text-align: center; /* Center-align the text */
+  max-width: 300px; /* Max width for card */
+  margin: 15px; /* Space between cards */
+}
+
+.Listing-Card img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+.Listing-Card h4 {
+  font-size: 18px; /* Size for h4 heading */
+  margin: 10px 0; /* Margin for spacing */
+}
+.Available {
+  color: greenyellow;
+}
+.Sold {
+  color: red;
+}
+.Few {
+  color: rgb(231, 215, 0);
+}
+.Listing-Card h6 {
+  font-size: 14px; /* Size for h6 heading */
+  color: #777; /* Lighter color for subtext */
+  margin: 5px 0; /* Margin for spacing */
+}
+.Listing-Card h4:last-child {
+  font-weight: bold;
+}
+.Details {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}

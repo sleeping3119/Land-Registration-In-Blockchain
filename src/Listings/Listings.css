@@ -1,0 +1,8 @@
+.ListingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+}

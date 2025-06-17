@@ -1,0 +1,113 @@
+[
+  {
+    "id": 0,
+    "firstName": "Ali",
+    "lastName": "Amin",
+    "username": "AliA",
+    "password": "ali123",
+    "phoneNo": "03334943200",
+    "CNIC": "12345"
+  },
+  {
+    "id": 1,
+    "firstName": "Abdul",
+    "lastName": "Rahim",
+    "username": "Abdul",
+    "password": "rahim123",
+    "phoneNo": "03334943210",
+    "CNIC": "67890"
+  },
+  {
+    "id": 2,
+    "firstName": "Ayesha",
+    "lastName": "Khan",
+    "username": "AyeshaK",
+    "password": "ayesha123",
+    "phoneNo": "03334943220",
+    "CNIC": "11223",
+    "userType": "Buyer"
+  },
+  {
+    "id": 3,
+    "firstName": "Chris",
+    "lastName": "Johnson",
+    "username": "Chris",
+    "password": "chris123",
+    "phoneNo": "03334943230",
+    "CNIC": "44556"
+  },
+  {
+    "id": 4,
+    "firstName": "Nina",
+    "lastName": "Williams",
+    "username": "Nina",
+    "password": "nina123",
+    "phoneNo": "03334943240",
+    "CNIC": "78901"
+  },
+  {
+    "id": 5,
+    "firstName": "Rachel",
+    "lastName": "Green",
+    "username": "Rachel",
+    "password": "rachel123",
+    "phoneNo": "03334943250",
+    "CNIC": "22334"
+  },
+  {
+    "id": 6,
+    "firstName": "John",
+    "lastName": "Doe",
+    "username": "John",
+    "password": "john123",
+    "phoneNo": "03334943260",
+    "CNIC": "33445"
+  },
+  {
+    "id": 7,
+    "firstName": "Megan",
+    "lastName": "Wilson",
+    "username": "Megan",
+    "password": "megan123",
+    "phoneNo": "03334943270",
+    "CNIC": "55667"
+  },
+  {
+    "id": 8,
+    "firstName": "Alex",
+    "lastName": "Lee",
+    "username": "Alex",
+    "password": "alex123",
+    "phoneNo": "03334943280",
+    "CNIC": "66778"
+  },
+  {
+    "id": 9,
+    "firstName": "Syed",
+    "lastName": "Abdul Rahim",
+    "username": "Syed",
+    "password": "syed123",
+    "phoneNo": "03334943290",
+    "CNIC": "88990"
+  },
+  {
+    "id": 11,
+    "firstName": "Syed",
+    "lastName": "Abdul Rahim",
+    "username": "aoa",
+    "password": "rg",
+    "phoneNo": "03334943210",
+    "userType": "Buyer",
+    "CNIC": "03"
+  },
+  {
+    "id": 12,
+    "firstName": "Syed",
+    "lastName": "Abdul Rahim",
+    "username": "abdu",
+    "password": "fj",
+    "phoneNo": "03334943210",
+    "userType": "Buyer",
+    "CNIC": "24"
+  }
+]
