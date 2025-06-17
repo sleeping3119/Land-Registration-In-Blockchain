@@ -125,4 +125,49 @@ contract LandRegistry {
         }
         return result;
     }
+
+
+    function addBalance(address _userAddress, uint256 _amount) public onlyExistingUser(_userAddress) {
+    users[_userAddress].balance += _amount; 
+    }
+
+    function buyLand(uint256 _landId) public onlyExistingUser(msg.sender) {
+        Land storage land = landRegistry[_landId];
+        require(land.forSale, "Land is not for sale");
+        require(users[msg.sender].balance >= land.pricePerNight, "Insufficient balance");
+
+        users[msg.sender].balance -= land.pricePerNight;
+        users[land.owner].balance += land.pricePerNight;
+
+        uint256[] storage sellerLands = ownerLands[land.owner];
+        for (uint i = 0; i < sellerLands.length; i++) {
+            if (sellerLands[i] == _landId) {
+                sellerLands[i] = sellerLands[sellerLands.length - 1];
+                sellerLands.pop();
+                break;
+            }
+        }
+
+        land.owner = msg.sender;
+        land.forSale = false;
+        ownerLands[msg.sender].push(_landId);
+    }
+
+    function deleteLand(uint256 _landId) public {
+        require(landRegistry[_landId].id != 0, "Land does not exist");
+
+        address owner = landRegistry[_landId].owner;
+
+        uint256[] storage lands = ownerLands[owner];
+        for (uint i = 0; i < lands.length; i++) {
+            if (lands[i] == _landId) {
+                lands[i] = lands[lands.length - 1];
+                lands.pop();
+                break;
+            }
+        }
+
+        delete landRegistry[_landId];
+    }
+
 }
